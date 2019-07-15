@@ -1,0 +1,157 @@
+h1{
+    font-size: 5em;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    margin: 0.2em;
+    margin-bottom: 0;
+}
+h2{
+    font-size: 3em;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    color: red;
+}
+
+p{
+    color: rgb(92,189,228);
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 40px;
+    margin:0;
+}
+
+.stats{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pause{
+    width:40px; 
+    height:40px; 
+    background-color: transparent;
+    background-size: 100%; 
+    background-size: 40px auto; 
+    border: 0;
+    margin: 5px;
+    padding: 0;
+}
+
+.tile {
+    float: left;
+    width: 48px;
+    height: 48px;
+    background-color: #eee;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.tile div{
+    float: left;
+    width: 48px;
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+}
+
+.newTurn {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    background-image: url("empty.png");
+    position: relative;
+    /* animation: slideIn 1s; */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    background-image: url("empty.png");
+    position: relative;
+    z-index: 5
+}
+
+img{
+    display: block;
+    position: absolute;
+    z-index: 2
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+#game-board{
+    height: 500px;
+    width: 500px;
+    margin: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+button{
+    font-size: 20px;
+    margin: 1.5em;
+    padding: 12px 18px;
+    font-size: 20px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+}
+
+.btn-white{
+    border:solid 2px white;
+    background: #eee;
+    color: black !important;
+}
+
+.btn-black{
+    border:solid 2px black;
+    background: #333333;
+    color: white !important;
+}
+
+.vanish{
+    transform: scale(0);
+    transition: transform 0.2s;
+}
+
+.dark-theme{
+    background-color: #333333;
+}
+
+.dark-theme-tile{
+    background-color: #666666;
+    border: 1px solid #333333;
+}
+
+.dark-theme-header{
+    color: white;
+}
